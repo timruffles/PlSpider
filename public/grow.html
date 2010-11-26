@@ -22,11 +22,34 @@
         font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
         color: #fff;
       }
-      
+      #svgBase {
+        position: relative;
+      }
       #action {
        font-size: 2em;
        height:2.5em;
       }
+      .dataTable {
+        position: absolute;
+        display: none;
+        padding: 0;
+        font-size:0.8em;
+      }
+      .dataTable li {
+         list-style-type: none;
+      }
+      .dataTable .title, .dataTable .data {
+        display: inline-block;
+      }
+      .dataTable .title {
+        text-align: left;
+        width: 20px;
+      }
+      .dataTable .data {
+        text-align: right;
+        width: 20px;
+      }
+      
     </style>
   </head>
   <body>
@@ -74,5 +97,19 @@
             </g>
           </svg>
     </svg>
+    
+    <div id="dataTable" class="dataTable">
+      <ul>
+        <li class="pass">
+          <span class="title">Pass</span><span class="data">0</span>
+        </li>
+        <li class="foul">
+          <span class="title ">Foul</span><span class="data">0</span>
+        </li>
+        <li class="interception">
+          <span class="title ">Inter.</span><span class="data">0</span>
+        </li>
+      </ul>
+    </div>
   </body>
 </html>
