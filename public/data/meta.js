@@ -1,0 +1,2 @@
+var homeTeam = ["J Zanetti", "N Pareja", "N Burdisso", "G Heinze", "L Messi", "J Pastore", "J Mascherano", "S Romero", "E Banega", "A Di Maria", "G Higuain", "E Lavezzi", "A D'Alessandro"],
+    awayTeam = ["Neymar", "Ronaldinho", "Elias", "D Alves", "T Silva", "D Luiz", "Robinho", "Ramires", "Lucas", "A Santos", "Victor", "Jucilei", "Douglas", "Andre"];

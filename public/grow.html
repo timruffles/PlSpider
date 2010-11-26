@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>Picklive Kits</title>
+    <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jqsvg/jquery.svg.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jqsvg/jquery.svgdom.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jqsvg/jquery.svganim.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script src="js/underscore.js" type="text/javascript" charset="utf-8"></script>
+    
+    
+    <script src="data/data.js" type="text/javascript" charset="utf-8"></script>
+    <script src="data/meta.js" type="text/javascript" charset="utf-8"></script>
+    
+    
+    <script src="js/picklive/grow.js" type="text/javascript" charset="utf-8"></script>
+    
+
+    <style type="text/css" media="screen">
+      body {
+        background:#4F9855;
+        font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
+        color: #fff;
+      }
+      
+      #action {
+       font-size: 2em;
+       height:2.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>This uses inline svg and jQuerySVG</h1>
+    <h2 id="action"></h2>
+    <div id="svgBase" width="800" height="800"></div>
+    
+    <svg id="library" style="display:none">
+      <svg version="1.1" id="kit" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+             width="80px" height="80px" viewBox="0 0 80 80" enable-background="new 0 0 80 80" xml:space="preserve">
+            <g>
+              <path opacity="0.27" fill="#000F00" enable-background="new    " d="M70.196,20.524C68.362,19.137,57.1,12.149,55.7,11.289
+                c-0.375-0.201-4.01-1.956-15.7-1.956s-15.328,1.755-15.825,2.024c-1.279,0.792-12.541,7.78-14.374,9.167
+                C5.94,23.447,13.17,38.41,13.273,38.545c0.483,0.652,1.234,0.983,2.234,0.983c1.178,0,3.37-0.483,5.209-0.951
+                c-0.512,6.095-1.569,19.638-1.438,25.392l0.019,0.798l0.532,0.588c4.332,4.791,15.548,5.31,20.17,5.31
+                c4.619,0,15.838-0.519,20.171-5.31l0.532-0.588l0.019-0.801c0.13-5.751-0.929-19.294-1.441-25.389
+                c1.841,0.467,4.033,0.951,5.211,0.951h0.003c0.997,0,1.749-0.331,2.234-0.984C66.827,38.41,74.062,23.449,70.196,20.524"/>
+            </g>
+            <path fill="#FFFFFF" d="M25.278,13.172c0,0-12.407,7.688-14.212,9.055c-1.805,1.367,3.382,14.354,3.892,15.036
+              c0.508,0.683,8.121-1.537,8.121-1.537s-1.859,20.848-1.692,28.194C24.94,67.85,35.093,68.535,40,68.535
+              c4.903,0,15.061-0.686,18.61-4.615c0.169-7.347-1.691-28.194-1.691-28.194s7.616,2.22,8.121,1.537
+              c0.509-0.682,5.696-13.669,3.895-15.036c-1.809-1.367-14.218-9.055-14.218-9.055S51.504,11.463,40,11.463
+              C28.492,11.463,25.278,13.172,25.278,13.172"/>
+            <path fill="#E90010" d="M61.755,17.569l-1.645,0.875L61,18.777l-7,6.224l0.891,2.667l11.406-7.207
+              C64.982,19.609,63.371,18.586,61.755,17.569z"/>
+            <path fill="#181B30" d="M59.051,15.873c-2.425-1.518-4.335-2.701-4.335-2.701s-2.095-1.094-8.849-1.529
+              c0.046,0.865-0.44,2.639-1.374,4.427c2.978,1.028,7.719,3.192,9.063,6.883l4-3.81h-1.333L59.051,15.873z"/>
+            <path fill="#E90010" d="M18.147,17.569l1.645,0.875l-0.89,0.333l7,6.224l-0.89,2.667l-11.407-7.207
+              C14.92,19.609,16.532,18.586,18.147,17.569z"/>
+            <path fill="#181B30" d="M20.851,15.873c2.425-1.518,4.335-2.701,4.335-2.701s2.095-1.094,8.849-1.529
+              c-0.046,0.865,0.44,2.639,1.374,4.427c-2.977,1.028-7.719,3.192-9.062,6.883l-4-3.81h1.333L20.851,15.873z"/>
+            <g>
+
+                <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="39.8586" y1="68.4805" x2="39.8586" y2="59.1689" gradientTransform="matrix(1 0 0 -1 0.1401 79.9453)">
+                <stop  offset="0" style="stop-color:#5E5E5E;stop-opacity:0.21"/>
+                <stop  offset="1" style="stop-color:#000000;stop-opacity:0.55"/>
+              </linearGradient>
+              <path fill="url(#SVGID_1_)" d="M34.13,11.639c-0.096,1.793,2.076,7.513,5.87,9.138c3.792-1.625,5.965-7.345,5.867-9.138
+                c-1.661-0.107-3.602-0.174-5.867-0.174C37.73,11.465,35.794,11.531,34.13,11.639z"/>
+            </g>
+            <g>
+              <path fill="#FFFFFF" d="M47.863,11.797c-0.021,2.834-2.632,8.917-7.074,10.819l-0.788,0.337l-0.786-0.337
+                c-4.441-1.901-7.055-7.985-7.077-10.819l1.994-0.157c-0.097,1.793,2.075,7.513,5.869,9.138c3.792-1.625,5.965-7.345,5.867-9.138
+                L47.863,11.797z"/>
+            </g>
+          </svg>
+    </svg>
+  </body>
+</html>
